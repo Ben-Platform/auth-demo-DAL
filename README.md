@@ -2,12 +2,14 @@
 Contains the directory structure and assetlinks.json file needed 
 for Webauthn/Passkeys auth to work. 
 
-**Note:** Android requires both relations to be present in `assetlinks.json`, due to Google Play's on-device verifier.
+**IMPORTANT:** Android requires both relations to be present in `assetlinks.json`, due to Google Play's on-device verifier.
 
 - delegate_permision/common.handle_all_urls
 - delegate_permission/common.get_login_creds
 
 If `common.handle_all_urls` isn't there, you will get a `RP ID not valid` error. 
+
+**NOTE:** remember to add your own SHA256 signature in `assetlinks.json`. 
 
 ## Directory structure
 ```
