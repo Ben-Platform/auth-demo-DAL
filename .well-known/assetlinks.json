@@ -1,9 +1,19 @@
 [
   {
-    "relation": ["delegate_permission/common.get_login_creds"],
+    "relation": [ "delegate_permission/common.get_login_creds" ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.soneso.stellar.smartdemo.android",
+      "sha256_cert_fingerprints": [
+        "85:21:D7:A8:CB:C0:DA:BF:27:5E:59:13:4B:A4:B4:16:CC:C4:AA:60:85:76:6C:55:85:C5:F3:8D:08:DE:27:02"
+      ]
+    }
+  },
+  {
+    "relation": [ "delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds" ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.soneso.stellar.smartdemo.android.coldtest",
       "sha256_cert_fingerprints": [
         "85:21:D7:A8:CB:C0:DA:BF:27:5E:59:13:4B:A4:B4:16:CC:C4:AA:60:85:76:6C:55:85:C5:F3:8D:08:DE:27:02"
       ]
